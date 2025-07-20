@@ -1,0 +1,64 @@
+name: mva_env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  # ---- Core Python ----
+  - python=3.10
+  - pip
+  - setuptools
+  - wheel
+
+  # ---- Numerics / Sci ----
+  - numpy
+  - scipy
+  - scikit-image
+  - scikit-learn
+  - pandas
+  - numba
+  - pywavelets
+  - pillow
+  - imageio
+  - tqdm
+  - cython
+
+  # ---- Audio / Signal ----
+  - librosa
+  - soundfile            # (libsndfile)
+  - ffmpeg               # ensures codec support
+
+  # ---- Vision / CV ----
+  - opencv
+  - matplotlib
+
+  # ---- PyTorch Stack (CUDA 11.8) ----
+  - pytorch=2.2.*
+  - torchvision=0.17.*
+  - pytorch-cuda=11.8    # from nvidia channel
+
+  # ---- Utilities ----
+  - pyyaml
+  - tabulate
+  - addict
+  - easydict
+  - networkx
+
+
+  - pip:
+      # Super-resolution / model helper libs
+      - basicsr==1.4.2
+      - facenet-pytorch
+      - insightface>=0.7
+      - einops
+      - torchjpeg
+      - pytorch-wavelets
+      - sewar
+      - ptflops
+      - self-attention-cv
+      # Logging / TB
+      - tensorboard
+      - tensorboardx
+      # (Optional) metrics & extras
+      - editdistance
+
