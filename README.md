@@ -1,6 +1,6 @@
 # Audio-Visual Video Face Hallucination with Lipreading and Frequency-Aware Loss
 
-This repository contains the official code for our proposed **audio-visual cross-modality support based video face hallucination network**, designed to enhance facial details in low-resolution videos. Our model leverages audio cues and a lipreading component to enhance spatial detail and maintain temporal consistency across frames.
+This repository contains the official code for our proposed **audio-visual cross-modality support based video face hallucination network** (https://link.springer.com/article/10.1007/s00138-025-01699-4), designed to enhance facial details in low-resolution videos. Our model leverages audio cues and a lipreading component to enhance spatial detail and maintain temporal consistency across frames.
 
 ---
 
